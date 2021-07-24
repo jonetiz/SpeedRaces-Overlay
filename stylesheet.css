@@ -1,0 +1,330 @@
+html {
+	width: 1920px;
+	height: 1080px;
+	margin: 0;
+	padding: 0;
+	font-family: HomepageBaukasten;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	overflow: hidden;
+}
+
+a {
+	color: yellow;
+}
+
+button {
+	border-radius: 5px;
+	color: white;
+	border: 1px solid black;
+}
+
+button:hover {
+    opacity:0.5;
+	cursor: pointer;
+}
+
+.logo-main-wrapper {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	height: 332px;
+	width: 885px;
+	box-sizing:border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo-main {
+	height: 368px;
+	width: 368px;
+}
+
+.logo-fillheight {
+	height: 100%;
+}
+
+.black {
+	filter: brightness(0);
+	color: black;
+}
+
+.white {
+	filter: brightness(1);
+	color: white;
+}
+
+.control-wrapper {
+	position: absolute;
+	top: 75px;
+	left: 50px;
+	width: 1820px;
+	box-sizing:border-box;
+	border: 2px solid #0864ec;
+	display: block;
+	background-color: #2a2a2a;
+}
+.control-section {
+	padding: 20px;
+	border-right: 2px solid #0864ec;
+	display: block;
+	text-align: center;
+}
+
+.nameplates{
+}
+
+.nameplate {
+	position: absolute;
+	height: 41px;
+	width: 287px;
+	box-sizing:border-box;
+	overflow:hidden;
+	display: block;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+}
+
+.nameplateTwitch {
+	position: absolute;
+	height: 41px;
+	width: 287px;
+	box-sizing: border-box;
+	overflow:hidden;
+	display: block;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.nameplate p{
+	height: 41px;
+}
+
+.nameplateTwitch {
+	animation: slide-twitch 60s linear infinite;
+	width: 287px;
+}
+
+.nameplateText {
+	color: #BF9D44;
+	align-items: center;
+	vertical-align: middle;
+	font-size:32;
+	font-weight:bold;
+	transform: translateY(2px);
+}
+
+.nameplateTextTwitch {
+	text-align:left;
+	color:white;
+	font-size:26;
+	font-weight:bold;
+	position:relative;
+	left:45px;
+	z-index:101;
+	transform: translateY(6px);
+	width: 100%;
+}
+
+@keyframes slide-twitch {
+	0% {
+		visibility: visible;
+		width: 0px;
+	}
+	0.5% {
+		visibility: visible;
+		width: 0px;
+	}
+	24.5% {
+		visibility: visible;
+		width: 287px;
+	}
+	1%, 25% {
+		visibility: visible;
+		width: 287px;
+		background-color: 8461c5;
+	}
+	25.5%,100% {
+		visibility: hidden;
+		width: 0px;
+	}
+}
+
+p {
+	font-family: HomepageBaukasten;
+	margin: 0;
+}
+
+p#current-music-text {
+	text-align: center;
+}
+
+#clock {
+	width: 150px;
+	text-align: center;
+}
+
+@font-face {
+	font-family: HomepageBaukasten;
+	src: url('img/fonts/HomepageBaukasten-Bold.ttf');
+}
+@font-face {
+	font-family: Orbitron;
+	src: url('img/fonts/Orbitron-VariableFont_wght.ttf');
+}
+
+#twitch-embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	width: 1280;
+	height: 720;
+	z-index: 100;
+}
+
+#timer {
+	position: absolute;
+	left: 945;
+	top: 484;
+	height: 42px;
+	width: 288px;
+	color: #BF9D44;
+	font-size: 36;
+	text-align: center;
+}
+
+.timerText {
+	position: relative;
+	z-index: 101;
+	font-family: Orbitron;
+	width: 20px;
+	display: inline-block;
+	margin: 0 0 0 0;
+}
+
+#timerControl {
+	font-family: Orbitron;
+	font-size:36;
+}
+
+.places-wrapper {
+	position: absolute;
+	z-index: 101;
+	top: 132;
+	left: 16;
+	pointer-events: none;
+}
+
+.places {
+	position: absolute;
+	height: 160px;
+	width: 222px;
+	top: 9px;
+	left: 7px;
+}
+
+.place {
+	height: 40px;
+	vertical-align: middle;
+}
+
+.place p {
+	position: absolute;
+	z-index: 102;
+	top: 7px;
+	left: 65px;
+	height: 26;
+	font-size: 24;
+	vertical-align: middle;
+	color: #BF9D44;
+}
+
+.discord-wrapper {
+	position: absolute;
+	z-index: 101;
+	top: 312;
+	left: 16;
+	pointer-events: none;
+}
+
+.times-wrapper {
+	position: absolute;
+	z-index: 101;
+	top: 720;
+	left: 16;
+	pointer-events: none;
+}
+
+#timesthingy {
+	position: absolute;
+	z-index: 102;
+	height: 304px;
+	width: 222px;
+	top: 9px;
+	left: 7px;
+	vertical-align: middle;
+	text-align: center;
+	align-items: center;
+}
+
+#timesthingy p {
+	width:100%;
+}
+
+#factTitle {
+	color: #BF9D44;
+	font-size:36;
+}
+#factSubtitle {
+	color: #BF9D44;
+	font-size:24;
+}
+#factBody {
+	color: #BF9D44;
+	font-size:18;
+}
+
+#factRule {
+	animation: ruleTimer 29s linear infinite;
+}
+
+@keyframes ruleTimer {
+	0% {
+		width: 90%;
+	}
+	100% {
+		width: 0%;
+	}
+}
+
+.timesTable {
+	width: 100%;
+	color: #BF9D44;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-collapse: collapse;
+}
+
+.timesTable tr>:nth-child(1) {
+	text-align:center;
+	width:96;
+	border-right: 1px solid #BF9D44;
+	padding: 5;
+}
+.timesTable tr>:nth-child(2) {
+	text-align:center;
+	width:96;
+	border-left: 1px solid #BF9D44;
+	padding: 5;
+}
+
+.cover {
+	pointer-events: none;
+}
